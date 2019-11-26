@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>调用Android组件测试</title>
+    <!-- 这里面就是js代码 -->
+    <script type="text/javascript">
+    function show(info){
+        document.getElementById("shows").innerHTML = info;
+        //之前的黄金数量-1
+    }
+</script>
+</head>
+
+<body>
+<b>测试</b>
+<br />
+<button onClick="window.stu.javaMethod('优惠券来了')">启动hello world Activity</button>
+<br />
+<hr  color="#99FF00"/>
+<button onClick="window.stu.showAndroid()">显示android内容</button>
+<br />
+<!-- 文本编辑框就相当于Android里面的EditText -->
+<textarea id= "shows"  cols="20" rows="10"> 暂无记录 </textarea>
+<br />
+
+</body>
+</html>
